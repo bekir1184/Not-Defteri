@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Fragmentlar.NotEkle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lin"
+            android:orientation="horizontal">
+            <EditText
+                android:padding="10dp"
+                android:id="@+id/notBaslik"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Not başlığı"
+                android:background="@drawable/edit_arka"
+                android:textSize="20dp"
+                android:layout_margin="30dp"
+                android:textColor="@android:color/black"/>
+            <Button
+                android:id="@+id/ekle_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ekle"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_arka"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <EditText
+            android:layout_centerInParent="true"
+            android:id="@+id/not_icerik"
+            android:padding="10dp"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lin"
+            android:background="@drawable/edit_arka"
+            android:layout_margin="20dp"
+            android:hint="Yazmaya başla..."
+            android:textColor="@android:color/black"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

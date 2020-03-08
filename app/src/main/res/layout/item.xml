@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:id="@+id/baslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Başlık yazılacak yer "
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/edit_arka"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/baslik"
+            android:id="@+id/icerik"
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="100dp"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:id="@+id/icerikYazilacak"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="deneme"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:gravity="top"/>
+                <TextView
+                    android:id="@+id/tarih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03.04.2020 "
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="15sp"
+                    android:layout_margin="20sp"/>
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</RelativeLayout>
